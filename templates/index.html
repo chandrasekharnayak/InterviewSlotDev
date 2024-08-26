@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Book a Slot</h2>
+        <form method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="technology">Technology:</label>
+            <select id="technology" name="technology" onchange="updateMentors()" required>
+                <option value="PAT">PAT</option>
+                <option value="JAT">JAT</option>
+                <option value="PD">PD</option>
+            </select>
+
+            <label for="company_name">Company Name:</label>
+            <input type="text" id="company_name" name="company_name" required>
+
+            <label for="round">Round:</label>
+            <select id="round" name="round" required>
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="Final">Final</option>
+            </select>
+
+            <label for="mentor">Mentor:</label>
+            <select id="mentor" name="mentor" onchange="updateTimeSlots()" required></select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <select id="time" name="time" required></select>
+
+            <button type="submit">Book Slot</button>
+        </form>
+    </div>
+</body>
+</html>

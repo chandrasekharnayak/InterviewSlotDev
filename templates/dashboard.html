@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Schedule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Daily Interview Schedule</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Company Name</th>
+                <th>Round</th>
+                <th>Time</th>
+                <th>Mentor</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for interview in interviews %}
+                <tr>
+                    <td>{{ interview.name }}</td>
+                    <td>{{ interview.company_name }}</td>
+                    <td>{{ interview.round }}</td>
+                    <td>{{ interview.time }}</td>
+                    <td>{{ interview.mentor }}</td>
+                    <td>{{ interview.date }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

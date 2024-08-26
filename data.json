@@ -1,0 +1,38 @@
+{
+    "daily": [
+        {
+            "name": "Chandra Sekhar",
+            "company_name": "TREENETRA EDUCATION",
+            "round": "1st",
+            "time": "11:00",
+            "mentor": "CSN",
+            "date": "2024-08-23"
+        },
+        {
+            "name": "ABC",
+            "company_name": "TREENETRA EDUCATION",
+            "round": "3rd",
+            "time": "11:00",
+            "mentor": "CSN",
+            "date": "2024-08-23"
+        }
+    ],
+    "weekly": [
+        {
+            "name": "Chandra Sekhar",
+            "company_name": "TREENETRA EDUCATION",
+            "round": "1st",
+            "time": "11:00",
+            "mentor": "CSN",
+            "date": "2024-08-23"
+        },
+        {
+            "name": "ABC",
+            "company_name": "TREENETRA EDUCATION",
+            "round": "3rd",
+            "time": "11:00",
+            "mentor": "CSN",
+            "date": "2024-08-23"
+        }
+    ]
+}
